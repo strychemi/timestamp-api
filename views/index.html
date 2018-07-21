@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice API</title>
+    <meta name="Timestamp Microservice API" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--   Bootstrap v4   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timestamp Microservice API</h1>
+      
+      <p>Implements the following user stories:</p>
+      
+      <ul>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ul>
+      
+      <h3>Example Usage:</h3>
+      
+      <code>https://strychemi-timestamp-api.glitch.me/February%2020,%202018</code>
+      <br>
+      <code>https://strychemi-timestamp-api.glitch.me/1519084800</code>
+      <br>
+      
+      <p class="mt-3">Results in the following response as JSON:</p>
+      
+      <code>{ "natural": "February 20, 2018", "unix": "1519084800" }</code>
+      
+    </div>
+  </body>
+</html>
